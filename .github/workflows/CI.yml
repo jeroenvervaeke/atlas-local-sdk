@@ -63,8 +63,8 @@ jobs:
     name: stable - ${{ matrix.settings.target }} - node@22
     runs-on: ${{ matrix.settings.host }}
     env:
-      CARGO_REGISTRIES_KELLNR_INDEX: ${{ secrets.KELLNR_REGISTRY_URL }}
-      CARGO_REGISTRIES_KELLNR_TOKEN: ${{ secrets.KELLNR_TOKEN }}
+      CARGO_REGISTRIES_KELLNR_INDEX: ${{ secrets.CARGO_REGISTRIES_KELLNR_INDEX }}
+      CARGO_REGISTRIES_KELLNR_TOKEN: ${{ secrets.CARGO_REGISTRIES_KELLNR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup node
