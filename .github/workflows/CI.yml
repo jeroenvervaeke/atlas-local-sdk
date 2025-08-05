@@ -4,7 +4,9 @@ env:
   APP_NAME: atlas-local-sdk
   MACOSX_DEPLOYMENT_TARGET: '10.13'
   CARGO_INCREMENTAL: '1'
-'on':
+  CARGO_REGISTRIES_KELLNR_INDEX: ${{ secrets.CARGO_REGISTRIES_KELLNR_INDEX }}
+  CARGO_REGISTRIES_KELLNR_TOKEN: ${{ secrets.CARGO_REGISTRIES_KELLNR_TOKEN }}
+on:
   push:
     branches:
       - master
@@ -62,9 +64,6 @@ jobs:
             build: yarn build --target aarch64-apple-darwin
     name: stable - ${{ matrix.settings.target }} - node@22
     runs-on: ${{ matrix.settings.host }}
-    env:
-      CARGO_REGISTRIES_KELLNR_INDEX: ${{ secrets.CARGO_REGISTRIES_KELLNR_INDEX }}
-      CARGO_REGISTRIES_KELLNR_TOKEN: ${{ secrets.CARGO_REGISTRIES_KELLNR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup node
