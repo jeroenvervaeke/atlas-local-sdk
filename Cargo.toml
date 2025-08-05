@@ -3,7 +3,7 @@
 authors = ["Jeroen Vervaeke <atlas-local.11r1w@0q.is>"]
 edition = "2021"
 name    = "atlas_local_sdk"
-version = "0.0.2"
+version = "0.0.3"
 
 [lib]
 crate-type = ["cdylib"]
