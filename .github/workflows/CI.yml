@@ -62,6 +62,9 @@ jobs:
             build: yarn build --target aarch64-apple-darwin
     name: stable - ${{ matrix.settings.target }} - node@22
     runs-on: ${{ matrix.settings.host }}
+    env:
+      CARGO_REGISTRIES_KELLNR_INDEX: ${{ secrets.KELLNR_REGISTRY_URL }}
+      CARGO_REGISTRIES_KELLNR_TOKEN: ${{ secrets.KELLNR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup node
