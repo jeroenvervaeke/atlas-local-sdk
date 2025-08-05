@@ -5,6 +5,28 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@0q/atlas-local@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@0q/atlas-local@workspace:."
+  dependencies:
+    "@emnapi/core": "npm:^1.4.5"
+    "@emnapi/runtime": "npm:^1.4.5"
+    "@napi-rs/cli": "npm:^3.0.3"
+    "@oxc-node/core": "npm:^0.0.30"
+    "@taplo/cli": "npm:^0.7.0"
+    "@tybys/wasm-util": "npm:^0.10.0"
+    ava: "npm:^6.4.1"
+    chalk: "npm:^5.4.1"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^16.1.2"
+    npm-run-all2: "npm:^8.0.4"
+    oxlint: "npm:^1.8.0"
+    prettier: "npm:^3.6.2"
+    tinybench: "npm:^4.0.1"
+    typescript: "npm:^5.8.3"
+  languageName: unknown
+  linkType: soft
+
 "@emnapi/core@npm:^1.4.5":
   version: 1.4.5
   resolution: "@emnapi/core@npm:1.4.5"
@@ -1464,28 +1486,6 @@ __metadata:
   checksum: 10c0/a16da9f7f2dbdd00a969bf264b7ad331b59df3eac2b38f529b881c5cc8662594e68ed096d927ec2aabdc13454379cdc6d677bcdb0a3d2db338fb4be17957832b
   languageName: node
   linkType: hard
-
-"atlas-local-sdk@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "atlas-local-sdk@workspace:."
-  dependencies:
-    "@emnapi/core": "npm:^1.4.5"
-    "@emnapi/runtime": "npm:^1.4.5"
-    "@napi-rs/cli": "npm:^3.0.3"
-    "@oxc-node/core": "npm:^0.0.30"
-    "@taplo/cli": "npm:^0.7.0"
-    "@tybys/wasm-util": "npm:^0.10.0"
-    ava: "npm:^6.4.1"
-    chalk: "npm:^5.4.1"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^16.1.2"
-    npm-run-all2: "npm:^8.0.4"
-    oxlint: "npm:^1.8.0"
-    prettier: "npm:^3.6.2"
-    tinybench: "npm:^4.0.1"
-    typescript: "npm:^5.8.3"
-  languageName: unknown
-  linkType: soft
 
 "ava@npm:^6.4.1":
   version: 6.4.1

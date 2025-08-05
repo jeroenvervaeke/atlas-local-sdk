@@ -1,19 +1,25 @@
 
 [package]
-authors = ["LongYinan <lynweklm@gmail.com>"]
+authors = ["Jeroen Vervaeke <atlas-local.11r1w@0q.is>"]
 edition = "2021"
 name    = "atlas_local_sdk"
-version = "0.1.0"
+version = "0.0.2"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-anyhow          = "1.0.98"
-atlas-local-sdk = { version = "0.1.0", registry = "kellnr" }
-bollard         = "0.19.2"
-napi            = { version = "3.0.0", features = ["async", "anyhow"] }
-napi-derive     = "3.0.0"
+anyhow      = "1.0.98"
+bollard     = "0.19.2"
+napi-derive = "3.0.0"
+
+  [dependencies.atlas-local-sdk]
+  registry = "kellnr"
+  version  = "0.1.0"
+
+  [dependencies.napi]
+  features = ["async", "anyhow"]
+  version  = "3.0.0"
 
 [build-dependencies]
 napi-build = "2"

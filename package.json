@@ -1,6 +1,6 @@
 {
-  "name": "atlas-local-sdk",
-  "version": "0.0.1",
+  "name": "@0q/atlas-local",
+  "version": "0.0.2",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
   "repository": "git@github.com:napi-rs/package-template.git",
