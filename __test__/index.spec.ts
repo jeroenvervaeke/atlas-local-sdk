@@ -1,8 +1,14 @@
 import test from 'ava'
 
-import { plus100 } from '../index'
+import { Client } from '../index'
 
-test('sync function from native code', (t) => {
-  const fixture = 42
-  t.is(plus100(fixture), fixture + 100)
+test('smoke test, list deployments returns nothing', async (t) => {
+  // Create client
+  let client = await Client.connect();
+
+  // List deployments
+  let deployments = await client.listDeployments();
+
+  // Verify no deployments are returned
+  t.is(deployments.length, 0);
 })
